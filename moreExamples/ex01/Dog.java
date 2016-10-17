@@ -15,25 +15,26 @@ public class Dog {
 
     public static void main(String [] args) {
 
-	Dog d1 = new Dog("Fido");
-	Dog d2 = new Dog("Rover");
-	Dog d3 = new Dog("Princess");
-	Dog d4 = new Dog("Spot");
-	Dog d5 = new Dog("Snoopy");
+	Dog d1 = new Dog("Buster");
+	Dog d2 = new Dog("Max");
+	Dog d3 = new Dog("Riley");
+	Dog d4 = new Dog("Sammy");
+	Dog d5 = new Dog("Cody");
 
-	d1.setAsDogOfTheWeek();  gc();    
-	d1 = d2;                 gc();                   
-	Dog d6 = d3;             gc();               
-	Dog temp = d4;           gc();             
-	d4 = d3;                 gc();                   
-	d3 = temp;               gc();                 
-	d2 = getDogOfTheWeek();  gc();    
-	d4.setAsDogOfTheWeek();  gc();    
-	d5 = null;               gc();                 
-	d4 = null;               gc();                 
-	d3 = null;               gc();                 
-	d2 = null;               gc();                 
+	d3.setAsDogOfTheWeek();  gc();    
+	d4 = d1;                 gc();                   
+	Dog d6 = d5;             gc();               
+	Dog temp = d3;           gc();             
+	d3 = d4;                 gc();                   
+	d4 = temp;               gc();                 
+	d1 = getDogOfTheWeek();  gc();    
+	d3.setAsDogOfTheWeek();  gc();    
 	d1 = null;               gc();                 
+	d2 = null;               gc();                 
+	d3 = null;               gc();
+	d4 = null;               gc();
+	d5 = null;               gc();
+	d6 = null;               gc();                 
 	temp = null;             gc();               
     }                              
 
